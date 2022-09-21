@@ -1,0 +1,4 @@
+data("ToothGrowth")
+head(ToothGrowth)
+lm(ToothGrowth$len~ToothGrowth$dose)
+plot(ToothGrowth$len,ToothGrowth$dose,col="blue",main="Linear Regression Analysis",abline=(lm(ToothGrowth$len~ToothGrowth$dose)),xlab="len",ylanb="dose")
